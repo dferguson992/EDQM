@@ -1,12 +1,10 @@
 package com.myorg;
 
-import software.amazon.awscdk.core.App;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.junit.Test;
-
-import java.io.IOException;
+import software.amazon.awscdk.core.App;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,7 +13,7 @@ public class EdqmTest {
         new ObjectMapper().configure(SerializationFeature.INDENT_OUTPUT, true);
 
     @Test
-    public void testStack() throws IOException {
+    public void testStack() {
         App app = new App();
         EdqmStack stack = new EdqmStack(app, "test");
 
