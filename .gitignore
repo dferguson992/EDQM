@@ -6,8 +6,13 @@ target
 .settings
 .vscode
 *.iml
+*.zip
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+.aws-sam
+.idea
+
 
